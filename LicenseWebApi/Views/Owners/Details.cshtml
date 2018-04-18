@@ -1,0 +1,98 @@
+﻿@model LicenseWebApi.Models.Owner
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Owner</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.license.first)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.first)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.last)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.last)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.zip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.coutry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.coutry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = model.license.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -80,7 +80,7 @@ namespace LicenseWebApi.Areas.HelpPage.Models
         public IDictionary<MediaTypeHeaderValue, object> SampleResponses { get; private set; }
 
         /// <summary>
-        /// Gets the error messages associated with this model.
+        /// Gets the error messages associated with this model.license.
         /// </summary>
         public Collection<string> ErrorMessages { get; private set; }
 

@@ -294,7 +294,8 @@ namespace LicenseWebApi.Areas.HelpPage
                     {
                         foreach (ParameterDescription uriParameter in complexTypeDescription.Properties)
                         {
-                            apiModel.UriParameters.Add(uriParameter);
+                            apiModel.
+                                UriParameters.Add(uriParameter);
                         }
                     }
                     else if (parameterDescriptor != null)

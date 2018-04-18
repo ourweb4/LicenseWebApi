@@ -1,6 +1,6 @@
 @using LicenseWebApi.Areas.HelpPage.ModelDescriptions
 @model CollectionModelDescription
-@if (Model.ElementDescription is ComplexTypeModelDescription)
+@if (model.license.ElementDescription is ComplexTypeModelDescription)
 {
     @Html.DisplayFor(m => m.ElementDescription)
 }

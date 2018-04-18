@@ -21,7 +21,7 @@ namespace LicenseWebApi
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-lum.css",
                       "~/Content/site.css"));
         }
     }

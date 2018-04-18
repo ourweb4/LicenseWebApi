@@ -1,0 +1,42 @@
+﻿@model LicenseWebApi.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.license.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.currversion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.currversion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.license.owner_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.license.owner_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = model.license.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -3,7 +3,7 @@ using System;
 namespace LicenseWebApi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
-    /// Describes a type model.
+    /// Describes a type model.license.
     /// </summary>
     public abstract class ModelDescription
     {

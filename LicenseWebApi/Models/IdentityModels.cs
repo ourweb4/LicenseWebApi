@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System.Data.Entity;
 
 namespace LicenseWebApi.Models
 {
@@ -18,9 +19,16 @@ namespace LicenseWebApi.Models
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="Microsoft.AspNet.Identity.EntityFramework.IdentityDbContext{LicenseWebApi.Models.ApplicationUser}" />
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
+        public DbSet<License> Licenses { get; set; }
+        public DbSet<Owner> Owners { get; set; }
+        public DbSet<Product> Products { get; set; }
+    public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
